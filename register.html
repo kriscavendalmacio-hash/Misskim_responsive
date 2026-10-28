@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: #0f1b2d;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #2b2b2b;
+        }
+
+        .page {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 45px;
+            background: #f7f3ea;
+            border: 2px solid #c9a24b;
+            border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .back {
+            margin: 0 0 25px;
+            font-size: 15px;
+        }
+
+        .back a {
+            color: #8a6d1f;
+            text-decoration: none;
+        }
+
+        .back a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            padding-bottom: 15px;
+            font-family: Georgia, serif;
+            font-size: 36px;
+            letter-spacing: 1px;
+            color: #0f1b2d;
+            border-bottom: 2px solid #c9a24b;
+        }
+
+        .lead {
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #666;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            font-weight: bold;
+            color: #0f1b2d;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="tel"],
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 6px;
+            padding: 11px;
+            font-size: 16px;
+            background: white;
+            border: 1px solid #c9a24b;
+            border-radius: 4px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #0f1b2d;
+            box-shadow: 0 0 6px #c9a24b;
+        }
+
+        fieldset {
+            margin: 18px 0 0;
+            padding: 0;
+            border: none;
+        }
+
+        legend {
+            padding: 0;
+            font-weight: bold;
+            color: #0f1b2d;
+        }
+
+        label.choice {
+            display: inline-block;
+            margin: 8px 22px 0 0;
+            font-weight: normal;
+            color: #2b2b2b;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #0f1b2d;
+        }
+
+        button {
+            margin: 30px 12px 0 0;
+            padding: 12px 32px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: 1px solid #c9a24b;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            color: #c9a24b;
+            background: #0f1b2d;
+        }
+
+        button[type="reset"] {
+            color: #0f1b2d;
+            background: transparent;
+        }
+
+        button:hover {
+            color: #0f1b2d;
+            background: #c9a24b;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h3 class="back"><a href="home.html">&larr; Back home</a></h3>
+
+        <h1>Register</h1>
+        <p class="lead">Fill in your details below. Every field is required except your address.</p>
+
+        <form action="">
+            <label for="name">Enter name</label>
+            <input type="text" id="name" placeholder="Name" required>
+
+            <label for="email">Enter email</label>
+            <input type="text" id="email" placeholder="email" required>
+
+            <label for="password">Enter password</label>
+            <input type="password" id="password" placeholder="password" required>
+
+            <label for="age">Enter age</label>
+            <input type="number" id="age" placeholder="age" required>
+
+            <label for="birthdate">Enter birthdate</label>
+            <input type="date" id="birthdate" required>
+
+            <label for="mobile">Enter mobile</label>
+            <input type="tel" id="mobile" placeholder="mobile" required>
+
+            <fieldset>
+                <legend>Program</legend>
+                <label class="choice"><input type="radio" name="program" value="BSIT" required> BSIT</label>
+                <label class="choice"><input type="radio" name="program" value="BSIS" required> BSIS</label>
+                <label class="choice"><input type="radio" name="program" value="CS" required> CS</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Year Level</legend>
+                <label class="choice"><input type="radio" name="year" value="1st" required> 1st</label>
+                <label class="choice"><input type="radio" name="year" value="2nd" required> 2nd</label>
+                <label class="choice"><input type="radio" name="year" value="3rd" required> 3rd</label>
+                <label class="choice"><input type="radio" name="year" value="4th" required> 4th</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Enter programming skills</legend>
+                <label class="choice"><input type="checkbox" name="skills" value="Java"> Java</label>
+                <label class="choice"><input type="checkbox" name="skills" value="Python"> Python</label>
+                <label class="choice"><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+            </fieldset>
+
+            <label for="address">Address</label>
+            <textarea id="address" rows="5" cols="30" placeholder="Enter your address / message"></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

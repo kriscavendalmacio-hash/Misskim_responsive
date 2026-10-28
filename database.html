@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: #0f1b2d;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #2b2b2b;
+        }
+
+        .page {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 45px;
+            background: #f7f3ea;
+            border: 2px solid #c9a24b;
+            border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .back {
+            margin: 0 0 25px;
+            font-size: 15px;
+        }
+
+        .back a {
+            color: #8a6d1f;
+            text-decoration: none;
+        }
+
+        .back a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            padding-bottom: 15px;
+            font-family: Georgia, serif;
+            font-size: 36px;
+            letter-spacing: 1px;
+            color: #0f1b2d;
+            border-bottom: 2px solid #c9a24b;
+        }
+
+        .lead {
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th {
+            padding: 14px;
+            text-align: left;
+            font-family: Georgia, serif;
+            letter-spacing: 0.5px;
+            color: #c9a24b;
+            background: #0f1b2d;
+            border: none;
+        }
+
+        td {
+            padding: 13px 14px;
+            border: none;
+            border-bottom: 1px solid #e0d6bd;
+        }
+
+        tr:nth-child(even) td {
+            background: #f3eddc;
+        }
+
+        tr:hover td {
+            background: #ede2c2;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h3 class="back"><a href="home.html">&larr; Back home</a></h3>
+
+        <h1>Student Database</h1>
+        <p class="lead">All students registered so far.</p>
+
+        <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Program</th>
+                    <th>Year Level</th>
+                    <th>Email</th>
+                </tr>
+
+                <tr>
+                    <td>09452</td>
+                    <td>Juan</td>
+                    <td>BSIT</td>
+                    <td>1st</td>
+                    <td>@Juan</td>
+                </tr>
+
+                <tr>
+                    <td>09456</td>
+                    <td>Anna</td>
+                    <td>BSA</td>
+                    <td>2nd</td>
+                    <td>@Anna</td>
+                </tr>
+
+                <tr>
+                    <td>09784</td>
+                    <td>Kent</td>
+                    <td>BSIS</td>
+                    <td>3rd</td>
+                    <td>@Kent</td>
+                </tr>
+
+                <tr>
+                    <td>09456</td>
+                    <td>Maria</td>
+                    <td>BASA</td>
+                    <td>4th</td>
+                    <td>@Maria</td>
+                </tr>
+
+                <tr>
+                    <td>09785</td>
+                    <td>Marco</td>
+                    <td>BSIT</td>
+                    <td>2nd</td>
+                    <td>@Marco</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

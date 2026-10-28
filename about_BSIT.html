@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Information Technology</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #1d2433;
+            background: #f7f3ea;
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 50px 20px 80px;
+            text-align: center;
+            color: #fff;
+            background: #0f1b2d;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            margin: 25px 0 10px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2rem, 6vw, 3.2rem);
+            line-height: 1.15;
+            color: #c9a24b;
+            text-shadow:
+                3px 3px 0 rgba(0, 0, 0, 0.45),
+                0 0 22px rgba(201, 162, 75, 0.4);
+        }
+
+        .hero p {
+            max-width: 60ch;
+            margin: 0 auto;
+            color: #d9dde6;
+        }
+
+        .orb {
+            position: absolute;
+            top: -80px;
+            right: -60px;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #c9a24b, transparent 70%);
+            opacity: 0.25;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-25px) scale(1.08);
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 26px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #c9a24b;
+            background: transparent;
+            border: 2px solid #c9a24b;
+            border-radius: 999px;
+            transition: background-color 0.3s ease, color 0.3s ease,
+                        transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            color: #0f1b2d;
+            background: #c9a24b;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: -45px auto 60px;
+            padding: 0 20px;
+        }
+
+        h2 {
+            margin: 35px 0 5px;
+            font-family: Georgia, "Times New Roman", serif;
+            color: #0f1b2d;
+        }
+
+        .note {
+            margin: 0 0 12px;
+            color: #5b6475;
+        }
+
+        /* Frames for the images — the images themselves are unchanged */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery div {
+            overflow: hidden;
+            width: 100% !important;
+            height: 260px !important;
+            padding: 12px;
+            background: #fff;
+            border-top: 5px solid #c9a24b;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(15, 27, 45, 0.18);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery div:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 35px rgba(15, 27, 45, 0.3);
+        }
+
+        /* Opacity effect on the images */
+        .gallery img {
+            opacity: 0.8;
+            transition: opacity 0.3s ease, transform 0.4s ease;
+        }
+
+        .gallery div:hover img {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .media {
+            padding: 25px;
+            background: #fff;
+            border-top: 5px solid #c9a24b;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(15, 27, 45, 0.18);
+            margin-top: 30px;
+        }
+
+        .media h2:first-child {
+            margin-top: 0;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+            background: #000;
+            border-radius: 8px;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #c9a24b;
+            outline-offset: 4px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+
+            .gallery div:hover,
+            .gallery div:hover img,
+            .btn:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 40px 16px 80px;
+            }
+
+            .media {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="orb"></div>
+
+        <div class="hero-inner">
+            <a class="btn" href="home.html">&larr; Back to home</a>
+            <h1>About BS Information Technology</h1>
+            <p>BS Information Technology prepares students to build, run and protect the software, networks and data systems that people rely on every day.</p>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="gallery">
+            <div style="width: 20%; height: 30vh;">
+                <a href="https://www.ctu.edu.ph" target="_blank"><img style="height: 100%; width: 100%; object-fit: contain;" src="folder_image_video_audio/IT_image.jpg" alt="Visit CTU Website" width="150"></a>
+            </div>
+
+            <div style="width: 20%; height: 30vh;">
+                <img style="height: 100%; width: 100%; object-fit: contain;" src="folder_image_video_audio/download.png" alt="BS Information Technology Student" width="150">
+            </div>
+        </div>
+
+        <div class="media">
+            <h2>Listen</h2>
+            <p class="note">Press play to hear more about the program.</p>
+            <audio controls>
+            <source src="folder_image_video_audio/ae779d1a-66ab-406a-a529-9d4e3fbd68ce.mp3" type="audio/mpeg">
+            </audio>
+
+            <h2>Watch</h2>
+            <p class="note">A short video about studying IT.</p>
+            <video width="600" controls>
+            <source src="folder_image_video_audio/25b54f24-3848-416b-8cb7-e84177308dfe.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+</body>
+</html>
